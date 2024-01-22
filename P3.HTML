@@ -1,0 +1,48 @@
+<HTML>
+    <head>
+        <title>Media Query</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .d1{
+                background-color: blue;
+                padding:50px;
+                float:left;
+                width: 10%;
+                color:yellow;
+                margin:10px;
+                border:10px dashed yellow;
+            }
+            .d2{
+                background-color: yellow;
+                padding:50px;
+                width: 10%;
+                float:left;
+                color:blue;
+                border: 10px solid blue;
+                margin:10px;
+            }
+            .d3{
+                color:white;
+            }
+            @media (max-width: 500px){
+                .d1{
+                    background-color: yellow;
+                    color: blue;
+                    width:100%;
+                    border: 10px solid blue;
+                }
+                .d2{
+                    background-color:blue;
+                    color:yellow;
+                    width:100%;
+                    border:10px dashed yellow;
+                }
+            }
+        </style>
+    </head>
+    <body bgcolor="black">
+        <div class="d3"><h1>If display viewport is less than 500px than d1 & d2 sepreted own.</h1></div>
+        <div class="d1">div-1</div>
+        <div class="d2">div-2</div><br>    
+    </body>
+</HTML>

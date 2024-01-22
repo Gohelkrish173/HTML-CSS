@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <style>
+            .box-1{
+                background-color: brown;
+                width: 10%;
+                height: 20%;
+                position: relative;
+                animation-name: slide-1;
+                animation-duration: 5s;
+                animation-direction:alternate;
+                animation-timing-function: linear;
+                animation-iteration-count:50;
+                float:left;
+            }
+
+            @keyframes slide-1 {
+                0%{
+                    left:0px;
+                    top:0px;
+                    background-color: white;
+                    transform:rotate(45deg);
+                }
+                20%{
+                    left:250px;
+                    top:0px;
+                    background-color: black;
+                    transform:rotate(90deg)
+                }
+                40%{
+                    top: 250px;
+                    left:250px;
+                    transform: rotate(135deg);
+                    background-color: blue;
+                }
+                60%{
+                    top: 250px;
+                    left:500px;
+                    background-color: green;
+                    transform: rotate(180deg);
+                }
+                80%{
+                    top:500px;
+                    left:500px;
+                    transform: rotate(270deg);
+                    background:greenyellow;
+                }
+                100%{
+                    top:500px;
+                    left:0px;
+                    transform: rotate(360deg);
+                    background-color: blueviolet;
+                }
+            }
+            
+            .box-2{
+                background-color:brown ;
+                width: 10%;
+                height: 20%;
+                position: relative;
+                left:500spx;
+                animation-name: slide-2;
+                animation-duration: 5s;
+                animation-direction:alternate;
+                animation-timing-function: linear;
+                animation-iteration-count:50;
+                float:right;
+            }
+            
+            @keyframes slide-2 {
+                0%{
+                    right:0px;
+                    top:0px;
+                    background-color: white;
+                    transform: rotate(45deg);
+                }
+                20%{
+                    right:250px;
+                    top:0px;
+                    background-color:black ;
+                    transform: rotate(90deg);
+                }
+                40%{
+                    right:250px;
+                    top: 250px;
+                    background-color: blue;
+                    transform: rotate(135);
+                }
+                60%{
+                    right:500px;
+                    top:250px;
+                    background-color: green;
+                    transform: rotate(180);
+                }
+                80%{
+                    right:500px;
+                    top:500px;
+                    background-color: greenyellow;
+                    transform: rotate(270deg);
+                }
+                100%{
+                    right:0px;
+                    top:500px;
+                    background-color: blueviolet;
+                    transform: rotate(360deg);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box-1">
+        </div>
+        <div class="box-2">
+        </div>
+    </body>
+</html>
