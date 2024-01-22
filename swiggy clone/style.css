@@ -1,0 +1,36 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.box{
+  height: 540px;
+  width: 100%;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box1{
+  width: 95%;
+  height: 540px;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+}
+
+.box2{
+  width : 54%;
+  height: 470px;
+  background-color: violet;
+}
+
+.box3{
+  width: 100%;
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
